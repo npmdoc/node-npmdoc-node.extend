@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.node.extend.extend">
+            function <span class="apidocSignatureSpan">node.</span>extend
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">node.extend.</span>version</span>
 
         </li>
@@ -73,6 +82,78 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.node.extend" id="apidoc.module.node.extend">module node.extend</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node.extend.extend" id="apidoc.element.node.extend.extend">
+        function <span class="apidocSignatureSpan">node.</span>extend
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function extend() {
+  var target = arguments[0] || {};
+  var i = 1;
+  var length = arguments.length;
+  var deep = false;
+  var options, name, src, copy, copyIsArray, clone;
+
+  // Handle a deep copy situation
+  if (typeof target === &#x27;boolean&#x27;) {
+    deep = target;
+    target = arguments[1] || {};
+    // skip the boolean and the target
+    i = 2;
+  }
+
+  // Handle case when target is a string or something (possible in deep copy)
+  if (typeof target !== &#x27;object&#x27; &#x26;&#x26; !is.fn(target)) {
+    target = {};
+  }
+
+  for (; i &#x3c; length; i++) {
+    // Only deal with non-null/undefined values
+    options = arguments[i];
+    if (options != null) {
+      if (typeof options === &#x27;string&#x27;) {
+        options = options.split(&#x27;&#x27;);
+      }
+      // Extend the base object
+      for (name in options) {
+        src = target[name];
+        copy = options[name];
+
+        // Prevent never-ending loop
+        if (target === copy) {
+          continue;
+        }
+
+        // Recurse if we&#x27;re merging plain objects or arrays
+        if (deep &#x26;&#x26; copy &#x26;&#x26; (is.hash(copy) || (copyIsArray = is.array(copy)))) {
+          if (copyIsArray) {
+            copyIsArray = false;
+            clone = src &#x26;&#x26; is.array(src) ? src : [];
+          } else {
+            clone = src &#x26;&#x26; is.hash(src) ? src : {};
+          }
+
+          // Never move original objects, clone them
+          target[name] = extend(deep, clone, copy);
+
+        // Don&#x27;t bring in undefined values
+        } else if (typeof copy !== &#x27;undefined&#x27;) {
+          target[name] = copy;
+        }
+      }
+    }
+  }
+
+  // Return the modified object
+  return target;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
 
