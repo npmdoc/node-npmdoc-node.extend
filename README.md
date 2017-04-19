@@ -1,9 +1,14 @@
-# api documentation for  [node.extend (v1.1.6)](https://github.com/dreamerslab/node.extend#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-node.extend.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node.extend) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node.extend.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node.extend)
+# npmdoc-node.extend
+
+#### api documentation for  [node.extend (v1.1.6)](https://github.com/dreamerslab/node.extend#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-node.extend.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node.extend) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node.extend.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node.extend)
+
 #### A port of jQuery.extend that actually works on node.js
 
-[![NPM](https://nodei.co/npm/node.extend.png?downloads=true)](https://www.npmjs.com/package/node.extend)
+[![NPM](https://nodei.co/npm/node.extend.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/node.extend)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-node.extend/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-node.extend_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-node.extend/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-node.extend/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-node.extend/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-node.extend/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-node.extend/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-node.extend/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "dreamerslab",
-        "email": "ben@dreamerslab.com"
+        "name": "dreamerslab"
     },
     "bugs": {
         "url": "https://github.com/dreamerslab/node.extend/issues"
@@ -61,17 +65,14 @@
     "main": "index",
     "maintainers": [
         {
-            "name": "dreamerslab",
-            "email": "ben@dreamerslab.com"
+            "name": "dreamerslab"
         },
         {
-            "name": "ljharb",
-            "email": "ljharb@gmail.com"
+            "name": "ljharb"
         }
     ],
     "name": "node.extend",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/dreamerslab/node.extend.git"
@@ -107,17 +108,6 @@
     "version": "1.1.6"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module node.extend](#apidoc.module.node.extend)
-1.  string <span class="apidocSignatureSpan">node.extend.</span>version
-
-
-
-# <a name="apidoc.module.node.extend"></a>[module node.extend](#apidoc.module.node.extend)
 
 
 
